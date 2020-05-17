@@ -1,4 +1,4 @@
-package cn.com.chengzi.drools.domain.cofing;
+package cn.com.chengzi.drools.cofing;
 
 import org.kie.api.KieBase;
 import org.kie.api.KieServices;
@@ -24,8 +24,8 @@ import java.io.IOException;
  */
 @Configuration
 public class DroolsAutoConfiguration {
-//    private static final String RULES_PATH = "demo/";
-    private static final String RULES_PATH = "rules/";
+    private static final String RULES_PATH = "demo/";
+    //private static final String RULES_PATH = "rules/";
 
     @Bean
     @ConditionalOnMissingBean(KieFileSystem.class)

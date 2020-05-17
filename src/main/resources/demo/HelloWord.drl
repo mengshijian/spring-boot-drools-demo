@@ -25,7 +25,7 @@ rule "contains"
       $s:String()
       $u:User(name contains $s)
     then
-        System.err.println("用户张三存在");
+        System.err.println("用户"+ $s +"存在");
 end
 
 // 某个对象存在与某个集合中, not memberOf 相反
